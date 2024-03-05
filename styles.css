@@ -1,0 +1,487 @@
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    font-family: "Fjalla One", sans-serif;
+    margin: 0;
+    width: 100%;
+
+    overflow-y: scroll; 
+    scrollbar-width: none; 
+}
+
+::-webkit-scrollbar {
+display: none; 
+}
+
+
+header{
+    width: 100%;
+    height: 7.5vh;
+    position: absolute;
+    display: flex;
+    top:0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.header_ul li a{
+    display: flex;
+    font-size: 1rem;
+    
+}
+
+header h1{
+    
+    display: flex;
+    color: white;
+    font-size: 26px;
+    font-weight: 240;
+    padding : 20px;
+    margin : 0 ;
+    width: 150px;
+}
+
+header h1:hover{
+    cursor: pointer;
+    color: rgba(0,0,0,0.7);
+}
+
+.header_ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.header_ul li{
+    list-style: none;
+    margin: 0 19px;
+    font-size: 1.2rem;
+}
+
+.header_ul li a{
+    
+    font-weight: 240;
+    text-decoration: none;
+    color: white;
+}
+
+.header_ul li a:hover{
+    text-decoration: underline;
+    color: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.blog_intro{
+    background: fixed;
+    background-image: url('image/nameofmin-ZcrTp07GQ2M-unsplash.jpg');
+    background-size: cover; 
+    background-position:center; 
+    z-index: 3;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 78vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: white;
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+.About_Me{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0.365);
+    color: white;
+    font-weight: 240;
+    align-items: center;
+    text-align: center;
+}
+
+.About_Me h2{
+    text-decoration: underline 5px solid;
+    font-size: 2rem;
+    display: flex;
+    font-weight: 340;
+    height: 4vh;
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.About_Me h3{
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+.About_Me p{
+    display: flex;
+    font-weight: 240;
+    height: 10vh;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.Learning{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100vw;
+    height: 800px;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 60px;
+}
+
+.Learning h2{
+    font-size: 2.5rem;
+    font-weight: 340;
+    text-decoration: underline 7.4px solid;
+}
+
+.skills{
+    display: flex;
+    position: relative;
+    /* background-color: rgba(0,0,0,0.06); */
+    color: white;
+    font-size: 2rem;
+    font-weight: 240;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.skills1{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.skills2, .skills3{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills1 div,.skills2 div,.skills3 div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.skills1 h3, .skills2 h3, .skills3 h3{
+    color: black;
+}
+
+.skills1 svg, .skills2 svg, .skills3 svg{
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+
+.skill_box{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.skill_box:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    scale: 1.2;
+    transition: 0.7s;
+}
+
+
+.skill_box:hover .overlay_text {
+    display:flex;
+    opacity: 0.9;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.overlay_text {
+        display:flex;
+        opacity: 0;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 81px;
+        margin: 40px;
+        border-radius: 15px;
+        font-size: 1rem;
+        font-weight: 300;
+        background-color: rgba(0, 0, 0, 1);
+        color: white;
+        padding: 10px;
+    }
+
+
+ .Project{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 2px solid rgba(0,0,0,0.1);
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    
+}
+    
+.Project h2{
+    font-size: 2.5rem;
+    font-weight: 340;
+    text-decoration: underline 7.4px solid;
+}    
+
+.ProjectSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Project_box{
+    display: flex;
+    width:500px;
+    height:300px;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 30px;
+    font-size: 1.2rem;
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.Project_img{
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.Project_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.Project_text{
+    width: 200px;
+    height: 220px;
+    padding-left: 20px;
+}
+
+.footer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.365);
+    color: white;
+    font-weight: 240;
+    bottom: 0;
+    right: 0;
+    width:100vw;
+    height:250px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer h2{
+    font-size: 2rem;
+}
+
+.contact{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+.contact span {
+    display: block;  
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.contact svg{
+    position: relative;
+    top:6px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+#github{
+    cursor: pointer;
+}
+
+
+.side_bar{
+    width: 7%;
+    height:50vh;
+    position: fixed;
+    display: block;
+    top:30%;
+    right: 0;
+    justify-content: center;
+    z-index: 1000;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.side_bar ul{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side_bar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    
+}
+
+.side_bar ul li a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* 620px이상 화면 */
+@media screen and (min-width:620px) {
+
+
+    .side_bar{
+        display: block;
+    }
+
+    header{
+        display: flex;
+        position: fixed;
+    }
+    }
+
+@media screen and (max-width:619px){
+
+
+    .blog_intro{
+        background: initial;
+        background-image: url('image/nameofmin-ZcrTp07GQ2M-unsplash.jpg');
+        background-size: cover; 
+        background-position:center;
+        height: 400px;
+        font-size: 70px;
+    }
+
+    header{
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h1{
+        display: none;
+    }
+
+    .header_ul{
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .header_ul li a{
+        font-size: 3.2vw;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .About_Me{
+        display:flex;
+        flex-direction: column;
+        height: 300px;
+    }
+    .About_Me h2{
+        font-size: 1.5rem;
+    }
+    .About_Me p{
+        align-items: normal;
+        width: 300px;
+    }
+    .Learning{
+        height: 530px;
+    }
+    .Learning h2{
+        font-size: 1.5rem;
+    }
+    .skills{
+        height: 500px;
+    }
+
+    .skills h3{
+        font-size: 1.2rem;
+    }
+
+    .skill_box svg{
+        width: 60px;
+        height: 60px;
+    }
+
+    .Project h2{
+        font-size: 1rem;
+    }
+    .Project_box{
+        width: 80%;
+        height: 170px;
+    }
+    .Project_text{
+        font-size: 0.6em;
+        width: 38%
+    }
+
+    .footer{
+        height: 120px;
+        font-size: 0.5rem;
+    }
+
+    .footer-section h2{
+        font-size: 1rem;
+    }
+
+    .footer-section span{
+        font-size: 0.7rem;  
+        margin: 0;
+    }
+
+}
